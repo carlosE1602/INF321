@@ -89,10 +89,12 @@ function acaoEditar() {
         // Passo 3, acima
         if (spanTarefa.classList.length > 1) {
             spanTarefa.classList.remove('tarefa-completa');
-            let p = spanTarefa.nextElementSibling;
+            let p = li.firstElementChild
             while (p != null) {
-                p.classList.remove('botao-completa');
-                p = p.nextElementSibling;
+                if(p.tagName.toLowerCase() !== 'h1'){
+                    p.classList.remove('botao-completa');
+                    p = p.nextElementSibling;
+                }
             }
         }
 
