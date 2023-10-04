@@ -245,11 +245,21 @@ function acaoInserir() {
 }
 
 function acaoSubir() {
-    window.alert("subir")
+    let li = this.parentNode;
+    let lista = li.parentNode;
+
+    if (li.previousElementSibling !== null) {
+        lista.insertBefore(li, li.previousElementSibling);
+    }else window.alert("O elemento ja é o primeiro da lista")
 }
 
 function acaoDescer() {
-    window.alert("descer")
+    let li = this.parentNode;
+    let lista = li.parentNode;
+
+    if (li.nextElementSibling !== null) {
+        lista.insertBefore(li.nextElementSibling, li);
+    }else window.alert("O elemento ja é o último da lista")
 }
 
 // Associa a função de inserção ao clique no botão Inserir
