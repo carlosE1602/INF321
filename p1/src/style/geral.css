@@ -1,0 +1,156 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cabecalho {
+  text-align: center; 
+  margin-top: 20px; 
+  width: 100%; 
+}
+
+.logo {
+  height: 80px; 
+  vertical-align: middle; 
+}
+
+.texto-cabecalho {
+  font-size: 24pt; 
+  font-weight: bold; 
+  padding-left: 15%; 
+  padding-right: 15%; 
+  height: 100%; 
+  vertical-align: middle; 
+}
+
+.titulo {
+  margin-top: 10px; 
+  margin-bottom: 10px; 
+  text-align: center; 
+  font-size: 20pt; 
+  font-weight: bold; 
+  vertical-align: middle; 
+  width: 95%; 
+}
+
+
+.info-base {
+  margin: 5% 8%;
+  text-align: justify;
+  font-size: 1.3em; 
+}
+
+
+.info-base-titulo {
+  font-size: 1.1em; 
+  font-weight: bold;
+}
+
+
+.campo {
+  text-decoration: underline;
+  font-style: italic;
+}
+
+
+#romano {
+  font-family: "Times New Roman", Times, serif;
+}
+
+
+ul li, ol li {
+  padding: 5px;
+}
+
+
+a {
+  text-decoration: none; 
+  color: rgb(0, 65, 255); 
+}
+
+
+.info-textual {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.1em; 
+}
+
+
+.info-textual-campo {
+  border: 1px solid black;
+  padding: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 8%;
+  margin-right: 8%;
+  width: 84%;
+}
+
+
+.info-textual-titulo {
+  text-align: center;
+  font-weight: bold;
+  background-color: darkgray;
+}
+
+
+.info-textual-conteudo {
+  text-align: justify;
+}
+
+
+.capitulo {
+  list-style-type: decimal;
+}
+
+.capitulo-li {
+  font-weight: bold;
+}
+
+.topico {
+  list-style-type: lower-alpha; 
+}
+
+
+.avaliacoes {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 25%;
+  margin-right: 25%;
+  width: 50%;
+  font-size: 1.1em;
+  vertical-align: middle;
+}
+
+
+.celulas {
+  border: 1px solid black;
+  padding: 10px 5px; 
+  word-break: normal;
+  overflow: hidden;
+}
+
+
+.titulotabela {
+  background-color: darkgray;
+}
+
+
+.subcabecalho {
+  background-color: lightgray;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+.dadotxt {
+  text-align: left;
+  font-weight: bold;
+}
+
+
+.dadonum {
+  text-align: center;
+}
