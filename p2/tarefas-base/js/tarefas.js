@@ -33,11 +33,11 @@ function acaoConcluir() {
         removendo a classe também neles, até que a lista termine (ponteiro p vale null) */
         let p = firstChild;
         while (p != null) {
-
-            if(p.tagName.toLowerCase() !== 'h1'){
+            console.log(p.tagName)
+            if(p.tagName.toLowerCase() !== 'span'){
                 p.classList.remove('botao-completa');
-                p = p.nextElementSibling;
             }
+            p = p.nextElementSibling;
         }
         // Se removemos a tarefa, ela sai do status de concluída para pendente
         de = 'concluidas';
@@ -47,10 +47,10 @@ function acaoConcluir() {
         let p = firstChild;
         while (p != null) {
 
-            if(p.tagName.toLowerCase() !== 'h1'){
+            if(p.tagName.toLowerCase() !== 'span'){
                 p.classList.add('botao-completa');
-                p = p.nextElementSibling;
             }
+            p = p.nextElementSibling;
         }
         de = 'pendentes';
         para = 'concluidas';
@@ -91,10 +91,10 @@ function acaoEditar() {
             spanTarefa.classList.remove('tarefa-completa');
             let p = li.firstElementChild
             while (p != null) {
-                if(p.tagName.toLowerCase() !== 'h1'){
+                if(p.tagName.toLowerCase() !== 'span'){
                     p.classList.remove('botao-completa');
-                    p = p.nextElementSibling;
                 }
+                p = p.nextElementSibling;
             }
         }
 
