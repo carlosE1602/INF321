@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Prática 03 - Calculadora JS</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- CSS externos da fonte Montserrat-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+
+        <!-- Nosso CSS -->
+        <link rel="stylesheet" href="css/estilos.css" />
+
+        <!-- Script JS -->
+        <script src="js/script.js" defer></script>
+    </head>
+    <body>
+        <h1>Prática 03 - Kanban</h1>
+        <div id="insercao">
+            <header>Nova Tarefa</header>
+            <div>
+                <input type="text" placeholder="Qual sua tarefa?" id="nova" />
+                <button class="botao" id="btnNova">+</button>
+                <button class="botao" id="btnLimpa">x</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="coluna" id="pendentes">
+                <header>A Fazer</header>
+                <div id="lista-pendentes" class="lista"></div>
+            </div>
+            <div class="coluna" id="fazendo">
+                <header>Em Andamento</header>
+                <div id="lista-fazendo" class="lista"></div>
+            </div>
+            <div class="coluna" id="concluidas">
+                <header>Concluídas</header>
+                <div id="lista-concluidas" class="lista"></div>
+            </div>
+        </div>
+    </body>
+</html>
