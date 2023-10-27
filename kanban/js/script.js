@@ -36,9 +36,7 @@ const criaTarefa = (texto, className = "pendente") => {
 }
 
 const insere = () => {
-  console.log("eueueu")
   let texto = objetos.inputNova.value;
-  console.log(texto)
   if (!texto) 
     alert('Informe um texto para a tarefa');
   else{
